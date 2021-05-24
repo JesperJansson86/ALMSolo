@@ -26,13 +26,13 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME}}
           password: ${{ secrets.DOCKERHUB_USERNAME}}
-      -name: Build and push
+      - name: Build and push
         uses: docker/build-push-action@v2
         with:
           context: .
           push: true
           tags: alutard/newtestimage:${{ github.run_number }}
-      -name: Upload artifact
+      - name: Upload artifact
         uses: action/upload-artifact@v2
         with:
           name: app.jar
