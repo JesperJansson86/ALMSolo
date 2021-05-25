@@ -33,7 +33,7 @@ jobs:
           push: true
           tags: alutard/newtestimage:${{ github.run_number }}
       - name: Upload artifact
-        uses: action/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: app.jar
           path: target/*.jar
