@@ -1,4 +1,4 @@
-name: DockerHum Login
+name: DockerHub Login
 
 on:
   workflow_dispatch:
